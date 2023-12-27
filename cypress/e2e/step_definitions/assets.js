@@ -9,6 +9,7 @@ import {
   Then("Click the Asset module which is located in the sidebar.", () => {
     
     assetsPage.assetssidemenu().click();
+    cy.wait(3000);
   })
   Then("Verify whether the asset page is as per The Figma UI.", () => {
     

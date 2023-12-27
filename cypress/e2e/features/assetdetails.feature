@@ -109,8 +109,9 @@ Feature: Assets page
          Then  Verify that the User able to choose guarantee Date from calender.
          Then  Verify that user able to select organisation from dropdown.
          Then  verify that user able to select department from dropdown.
-         Then  verify that user able to select laboratory from dropdown.
+         
          Then  verify that user able to select status from dropdown.
+         Then  verify that user able to select laboratory from dropdown.
          Then  verify that user able to select availability from dropdown.
          Then  Click Save button.
      

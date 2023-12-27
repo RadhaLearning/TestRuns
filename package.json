@@ -4,6 +4,8 @@
   "description": "This project is meant to be a kind of template to show the report of Testruns goning the project.",
   "main": "index.js",
   "scripts": {
+    "runtests": "npm run test --",
+    "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
     "test-runner": "cypress open",
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/*",

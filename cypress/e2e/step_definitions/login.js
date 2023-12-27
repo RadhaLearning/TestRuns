@@ -59,7 +59,7 @@ Then("Enter the invalid email id", () => {
 })
 
 Then("Enter the registered email id", () => {
- loginPage.email().should('exist').type("admin@testrunz.com");
+ loginPage.email().should('exist').type("admin@yopmail.com");
 
 })
 

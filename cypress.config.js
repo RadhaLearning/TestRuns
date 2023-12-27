@@ -32,5 +32,6 @@ module.exports = defineConfig({
     env: {
       allureReuseAfterSpec: true,
     },
+    defaultCommandTimeout: 10000,
   },
 });

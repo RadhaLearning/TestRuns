@@ -1,11 +1,11 @@
 class AssetsPage{
 
     assetssidemenu(){
-        return cy.xpath('(//div[@role="button"])[5]');
+        return cy.get(':nth-child(4) > .MuiButtonBase-root > .MuiListItemIcon-root > img');
     }
         
     createassets(){
-        return cy.xpath('(//button[contains(@class,"MuiButtonBase-root MuiButton-root")])[1]');
+        return cy.xpath('(//div[@class="buttonFilter"]//button)[1]');
     }
     
     searchassets(){
@@ -39,6 +39,10 @@ class AssetsPage{
     popupavailabilitytitle(){
         return cy.xpath('//label[text()="Availability"]');
     }
+    popimageupload(){
+        return cy.xpath('//input[@type="file"]');
+    }
+    
     popupassetsname(){
         return cy.xpath('//input[@placeholder="Assets name"]');
     }
@@ -49,22 +53,25 @@ class AssetsPage{
         return cy.get('[data-timestamp="1700850600000"]');
     }
     popupguarantydate(){
-        return cy.xpath('//button[@aria-label="Choose date"]');
+        return cy.get('.css-nfk862 > .MuiBox-root > .MuiFormControl-root > .MuiInputBase-root > .MuiInputAdornment-root > .MuiButtonBase-root');
     }
     popuporganisation(){
         return cy.xpath('//div[text()="Select Organization"]');
     }
+    popuporganisationoptions(){
+        return cy.xpath('(//li[@role="option"])[1]');
+    }
     popupdepartment(){
-        return cy.get('#organisationId');
+        return cy.xpath('//input[@placeholder="Department/s"]');
     }
     popupdepartmentoptions(){
-        return cy.get('#organisationId-option-0');
+        return cy.get('#departmentId-option-0');
     }
     popuplaboratory(){
-        return cy.get(':nth-child(5) > .MuiGrid-root > .MuiBox-root > .MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root > #departmentId');
+        return cy.get('#laboratoryId');
     }
     popuplaboratoryoptions(){
-        return cy.get('#departmentId-option-2');
+        return cy.get('#laboratoryId-option-0');
     }
     popupstatus(){
         return cy.xpath('//div[text()="Select Status"]');
@@ -75,8 +82,8 @@ class AssetsPage{
     popupavailability(){
         return cy.xpath('//div[text()="Select Availability"]');
     }
-    availablestatus(){
-        return cy.xpath('//li[@data-value="Available"]');
+    popupavailablestatus(){
+        return cy.xpath('//li[@data-value="In_Use"]');
     }
     popupassetid(){
         return cy.xpath('//input[@placeholder="Assets Id"]');
@@ -101,6 +108,70 @@ class AssetsPage{
     confirmno(){
         return cy.xpath('(//button[text()="No"])[1]');
     }
+
+    thermometer(){
+        return cy.xpath('//div[text()="Thermometer"]');
+    }
+
+    assetsdetailsname(){
+        return cy.get('#name');
+    }
+    pdate(){
+        return cy.xpath('(//input[@placeholder="MM/DD/YYYY"])[1]')
+    }
+    gdate(){
+        return cy.xpath('(//input[@placeholder="MM/DD/YYYY"])[2]')
+    }
+    assetsdetailspurchasedate(){
+        return cy.get('.css-1gff878 > .MuiBox-root > .MuiFormControl-root > .MuiInputBase-root > .MuiInputAdornment-root > .MuiButtonBase-root');
+    }
+    assetsdetailspurchasechoosedate(){
+        return cy.get('[data-timestamp="1700245800000"]');
+    }
+
+    assetsdetailsguarantydate(){
+        return cy.get('.css-nfk862 > .MuiBox-root > .MuiFormControl-root > .MuiInputBase-root > .MuiInputAdornment-root > .MuiButtonBase-root');
+    }
+    assetsdetailsorganisation(){
+        return cy.get('#organisationId > div');
+    }
+    assetsdetailsorganisationdropdown(){
+        return cy.get('#menu-organisationId > .MuiPaper-root > .MuiList-root > [tabindex="-1"]');
+    }
+    assetsdetailsdepartment(){
+        return cy.get('.css-tzsjye > .MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root > #departmentId');
+    }
+    assetsdetailsdepartmentdropdown(){
+        return cy.xpath('');
+    }
+    assetsdetailslaboratory(){
+        return cy.xpath('(//input[@id="departmentId"])[2]')
+    }
+    assetsdetailslaboratorydropdown(){
+        return cy.get('#departmentId-option-3')
+    }
+
+    assetsdetailsstatus(){
+        return cy.xpath('(//div[contains(@class,"MuiSelect-select MuiSelect-outlined")])[2]');
+    }
+
+    assetsdetailsstatusdropdown(){
+        return cy.xpath('//li[@data-value="Inactive"]');
+    }
+
+    assetsdetailsavailability(){
+        return cy.xpath('(//div[contains(@class,"MuiSelect-select MuiSelect-outlined")])[3]');
+    }
+
+    assetsdetailsavailabilitydropdown(){
+        return cy.xpath('//li[@data-value="In_Use"]');
+    }
+
+    assetsdetailssave(){
+        return cy.xpath('//button[text()="Save"]');
+    }
+
+
 
 
 
@@ -147,17 +218,112 @@ class AssetsPage{
     delete(){
         return cy.xpath('//img[@alt="Delete"]');
     }
+    deleteyes(){
+        return cy.xpath('(//button[text()="Yes"])[2]');
+    }
     assign(){
         return cy.xpath('//img[@alt="assign"]');
     }
     share(){
         return cy.xpath('//img[@alt="Share"]');
     }
+    sharesave(){
+        return cy.xpath('(//button[text()="Save"])[2]');
+    }
     pagination(){
         return cy.xpath('(//ul[@class="MuiPagination-ul css-nhb8h9"]//li)[3]');
     }
+    status(){
+       // return cy.get(':nth-child(1) > :nth-child(7) > .MuiInputBase-root > #mui-component-select-status');
+       return cy.xpath('(//div[text()="Active"])[1]');
+    }
+    active(){
+        return cy.get('.MuiList-root > .Mui-selected');
+    }
+    inactive(){
+        return cy.get('#menu-status > .MuiPaper-root > .MuiList-root > [tabindex="-1"]');
+    }
+    availablestatus(){
+        return cy.xpath('(//div[text()="Available"])[1]');
+    }
+    inuse(){
+        return cy.xpath('//li[@data-value="In_Use"]');
+    }
     
-    
+    filter(){
+        return cy.xpath('//span[contains(@class,"MuiBadge-root red-badge-filter")]//img[1]');
+    }
+
+    searchby(){
+        return cy.xpath('//div[text()="Search by"]');
+    }
+    assetsid(){
+        return cy.xpath('//li[text()="Assets ID"]');
+    }
+    assetsname(){
+        return cy.xpath('//li[text()="Assets name"]');
+    }
+    assetsdepartment(){
+        return cy.xpath('//li[text()="Department"]');
+    }
+    assetslab(){
+        return cy.xpath('//li[text()="Lab"]');
+    }
+    assetspurchasedon(){
+        return cy.xpath('//li[text()="Purchased on"]');
+    }
+    datepurchaseon(){
+        return cy.xpath('(//button[@aria-label="Choose date"])[3]');
+    }
+    assetslastused(){
+        return cy.xpath('//li[text()="Last used"]');
+    }
+    assetsfilterstatus(){
+        return cy.xpath('//li[text()="Status"]');
+    }
+    assetsfilteravailability(){
+        return cy.xpath('//li[text()="Availability"]');
+    }
+    filtersearchtextbox(){
+        return cy.xpath('//input[@placeholder="Search"]');
+    }
+    select(){
+        return cy.xpath('//div[text()="Select"]');
+    }
+    selectoptions(){
+        return cy.xpath('(//li[@role="option"])[1]');
+    }
+    showresults(){
+        return cy.xpath('//button[text()="Show results"]');
+    }
+    assetserrormessage(){
+        return cy.xpath('//p[text()="Asset Name is required"]');
+    }
+    purchasedateerrormessage(){
+        return cy.xpath('//p[text()="Purchase date required"]');
+    }
+    organisationerrormessage(){
+        return cy.xpath('//p[text()="Organisation is required"]');
+    }
+    departmenterrormessage(){
+        return cy.xpath('//p[text()="Please select at least one Department"]');
+    }
+    laboratoryerrormessage(){
+        return cy.xpath('//p[text()="Please select at least one Laboratory"]');
+    }
+    statuserrormessage(){
+        return cy.xpath('//p[text()="Status is required"]');
+    }
+    availabilityerrormessage(){
+        return cy.xpath('//p[text()="Availability is required"]');
+    }
+    displayedassets(){
+        return cy.xpath('//table[@class="MuiTable-root MuiTable-stickyHeader css-3tzftu"]').eq(2).find('td').eq(1).click();
+    }
+    assetseditsave(){
+        return cy.xpath('//button[text()="Save"]');
+    }
+  
     }
 
     export const assetsPage = new AssetsPage();

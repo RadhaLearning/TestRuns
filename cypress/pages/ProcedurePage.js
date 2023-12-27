@@ -17,8 +17,29 @@ class ProcedurePage{
         return cy.xpath('(//label[text()="Laboratory"]/following::input)[1]');
     }
     procedurepopupprocedurename(){
-        return cy.xpath('//label[text()="Procedure name"]/following::input');
+        return cy.xpath('//input[@placeholder="The simple pendulum"]');
     }
+    procedurepopupdepartdropdown(){
+        return cy.xpath('//input[@placeholder="Department/s"]');
+    }
+    
+    proceduredepartvalue(){
+        return cy.get('#departmentId-option-0');
+    }
+    procedurelabvalue(){
+        return cy.get('#departmentId-option-1');
+    }
+    procedurepopuplabdropdown(){
+        return cy.xpath('//input[@placeholder="Laboratory/ies"]');
+    }
+    procedurepopupcreate(){
+        return cy.xpath('//button[text()="Create"]');
+    }
+
+    proceduresidemenu(){
+        return cy.get(':nth-child(3) > .MuiButtonBase-root > .MuiListItemIcon-root');
+    }
+
     
     procedureidsort(){
         return cy.xpath('//span[text()="Procedure ID"]');
@@ -68,7 +89,39 @@ class ProcedurePage{
         return cy.xpath('(//ul[@class="MuiPagination-ul css-nhb8h9"]//li)[3]');
     }
 
+    logoutprofile(){
+        return cy.xpath('(//img[@alt="help_icon"])[3]');
+    }
+    logout(){
+        return cy.xpath('//p[text()="Logout"]');
+    }
+    procedurecancel(){
+        return cy.xpath('(//button[text()="Cancel"])[3]');
+    }
+    procedurecancelyes(){
+        return cy.xpath('(//button[text()="Yes"])[1]');
+    }
+    departmenterror(){
+        return cy.xpath('//p[text()="Department is required"]');
+    }
+    laboratoryerror(){
+        return cy.xpath('//p[text()="Laboratory is required"]');
+    }
+    procedurenameerror(){
+        return cy.xpath('//p[text()="Procedure name is required"]');
+    }
+    firstproceduredetails(){
+        return cy.xpath('(//td[contains(@class,"MuiTableCell-root MuiTableCell-body")])[2]');
+    }
+    procedureedits(){
+        return cy.xpath('//button[text()="Edit"]');
+    }
+    procedurename(){
+        return cy.xpath('//input[@placeholder="Procedure Name"]');
+    }
     
+    
+
     
     }
 
