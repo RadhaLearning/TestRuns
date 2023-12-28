@@ -105,3 +105,13 @@ loginPage.eyeclick().click();
 })
 
 
+Then("Enter login details and click on login button.", () => {
+  loginPage.email().should('exist').type("admin@yopmail.com");
+  loginPage.password().should('exist').type("Test@123");
+  loginPage.remembermecheckbox().click();
+  loginPage.loginbtn().click();
+  
+  })
+
+
+

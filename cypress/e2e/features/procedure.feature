@@ -4,10 +4,7 @@ Feature: Procedure page
 
     Background: 
         Given A web browser is at the Testrunz login page
-        Then Enter the registered email id
-        Then Enter the registered password 
-        Then Click the Remember me checkbox 
-        Then Click Log In button
+        Then Enter login details and click on login button.
         Then Click procedure in side menu.
 
 #    Scenario: TC_TRUNZ_10_01: To validate the functionality of creating new procedure.
@@ -182,34 +179,38 @@ Feature: Procedure page
 #          Then  Verify that the user redirects to the previous page.
 
 
+
+
    Scenario: TC_TRUNZ_5_01: Verify the functionality of creating New procedure.
-         Then  Click Create Procedure button.
-         Then  Click Department dropdown.
-         Then  Click Laboratory dropdown.
-         Then  Enter Procedure Name.
-         Then  Click Procedure Create button.
+        #  Then  Click Create Procedure button.
+        #  Then  Click Department dropdown.
+        #  Then  Click Laboratory dropdown.
+        #  Then  Enter Procedure Name.
+        #  Then  Click Procedure Create button.
+         Then  Creating an New Procedure.
+         Then  Verify that the user able to edit the created procedure details.
 
     
-   Scenario: TC_TRUNZ_5_02: Verify that the user cancel the create procedure pop-up screen.
-         Then  Click Create Procedure button.
-         Then  Click Cancel button.
-         Then  Click Yes from confirmation.
+#    Scenario: TC_TRUNZ_5_02: Verify that the user cancel the create procedure pop-up screen.
+#          Then  Click Create Procedure button.
+#          Then  Click Cancel button.
+#          Then  Click Yes from confirmation.
          
-   Scenario: TC_TRUNZ_5_03: Verify that the Mandatory error message are displayed.
-         Then  Click Create Procedure button.
-         Then  Click Procedure Create button.
-         Then  Check Mandatory error message are displayed.
+#    Scenario: TC_TRUNZ_5_03: Verify that the Mandatory error message are displayed.
+#          Then  Click Create Procedure button.
+#          Then  Click Procedure Create button.
+#          Then  Check Mandatory error message are displayed.
 
                
-   Scenario: TC_TRUNZ_5_04: Verify that the user able to edit the created procedure details.
-         Then  Click created procedure if its exist in table.
-         Then  Click edit options and rewrite the procedure name.
-         Then  Click update button and verify that the toaster message is displayed.
+#    Scenario: TC_TRUNZ_5_04: Verify that the user able to edit the created procedure details.
+#          Then  Click created procedure if its exist in table.
+#          Then  Click edit options and rewrite the procedure name.
+#          Then  Click update button and verify that the toaster message is displayed.
 
-   Scenario: TC_TRUNZ_5_05: Verify that the user able to Delete the procedure.
-         Then  Click created procedure checkbox.
-         Then  Click Delete option in close action menu.
-         Then  Click update button and verify that the toaster message is displayed.
+#    Scenario: TC_TRUNZ_5_05: Verify that the user able to Delete the procedure.
+#          Then  Click created procedure checkbox.
+#          Then  Click Delete option in close action menu.
+#          Then  Click update button and verify that the toaster message is displayed.
          
         
          

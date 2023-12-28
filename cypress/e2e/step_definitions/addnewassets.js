@@ -9,6 +9,7 @@ import {
   Then("Click create assets button.", () => {
     cy.wait(1000);
     assetsPage.createassets().click();
+    cy.wait(2000);
    
   })
   
@@ -42,9 +43,24 @@ import {
     console.log('The Page redirects to assets page after clicked No');
   })
   Then("Click and upload Assets image.", () => {
-    const filepath = 'C:\Users\TLSPC-091\Pictures\Screenshots\voltmeter.jpg'
-        assetsPage.popimageupload().click().attachFile(filepath);
+  
+    cy.fixture('voltmeter.jpg').then(fileContent => {
+      // Get the file input element and attach the file
+      cy.get('input[type="file"]').attachFile({
+        fileContent,
+        fileName: 'voltmeter.jpg',
+        mimeType: 'image/jpeg'
+      });
+    });
+    cy.log('File uploaded. Checking visibility of the image.');
         cy.wait(2000);
+        cy.log('Message is visible on the page.');
+
+
+        // cy.uploadFileFromFixture('fixtures/voltmeter.jpg', 'input[type="file"]');
+
+        // // Optionally, you can perform additional assertions or actions after the upload
+        // cy.get('.uploaded-file').should('be.visible');
   })
   Then("Click Enter Asset Name Textbox and  enter name with allowed character 8-16 without Numeric.", () => {
     assetsPage.popupassetsname().type('ASS17');

@@ -4,27 +4,24 @@
 
     Background: 
         Given A web browser is at the Testrunz login page
-        Then Enter the registered email id
-        Then Enter the registered password 
-        Then Click the Remember me checkbox 
-        Then Click Log In button
+        Then Enter login details and click on login button.
         Then Click the Asset module which is located in the sidebar.
         
       
      Scenario: TC_TRUNZ_04_01: Verify that the User able to add new assets.
          Then  Click create assets button.
-         #Then  Click and upload Assets image.
+         Then  Click and upload Assets image.
          Then  Click Enter Asset Name Textbox and  enter name with allowed character 8-16 without Numeric.
          Then  Click Calender icon in Purchase date field and choose date wisely.
          Then  Click Calender icon in Guaranty Warranty Expiry date field and choose date wisely.
          Then  Click Department Dropdown and Select wisely.
-         Then  Click Organisation Dropdown and Select wisely.
-        
+         Then  Click Organisation Dropdown and Select wisely.       
          Then  Click Status Dropdown and Select wisely.          
          Then  Click Availability Dropdown and Select wisely.
          Then  Click Labaratory Dropdown and Select wisely.
          Then  Click Create button.
 
+         
      
       
      Scenario: TC_TRUNZ_04_02: Verify that the user able to access the close action Menu's.

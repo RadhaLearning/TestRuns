@@ -17,7 +17,7 @@ class ProcedurePage{
         return cy.xpath('(//label[text()="Laboratory"]/following::input)[1]');
     }
     procedurepopupprocedurename(){
-        return cy.xpath('//input[@placeholder="The simple pendulum"]');
+        return cy.xpath('//input[@placeholder="Procedure Name"]');
     }
     procedurepopupdepartdropdown(){
         return cy.xpath('//input[@placeholder="Department/s"]');
@@ -27,7 +27,7 @@ class ProcedurePage{
         return cy.get('#departmentId-option-0');
     }
     procedurelabvalue(){
-        return cy.get('#departmentId-option-1');
+        return cy.get('#departmentId-option-0');
     }
     procedurepopuplabdropdown(){
         return cy.xpath('//input[@placeholder="Laboratory/ies"]');

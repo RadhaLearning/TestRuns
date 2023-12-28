@@ -77,13 +77,13 @@ class AssetsPage{
         return cy.xpath('//div[text()="Select Status"]');
     }
     statusinactive(){
-        return cy.xpath('//li[@data-value="Inactive"]');
+        return cy.xpath('//li[@data-value="Active"]');
     }
     popupavailability(){
         return cy.xpath('//div[text()="Select Availability"]');
     }
     popupavailablestatus(){
-        return cy.xpath('//li[@data-value="In_Use"]');
+        return cy.xpath('//li[@data-value="Available"]');
     }
     popupassetid(){
         return cy.xpath('//input[@placeholder="Assets Id"]');

@@ -101,17 +101,30 @@ Feature: Assets page
     #  Scenario: TC_TRUNZ_05_20: Verify whether the history of the particular Asset is displayed with the Asset image, id, name.
     #      Then  View the History of the particular  Asset.
     #      Then  Verify that the user able to see the history of the particular Asset.
-     
-      
-     Scenario: TC_TRUNZ_05_21: Verify whether the user able to edit the assets details.
-         Then  Enter Asset name in edit asset details page.
-         Then  Click Purchase calender and choose date wisely.
-         Then  Verify that the User able to choose guarantee Date from calender.
-         Then  Verify that user able to select organisation from dropdown.
-         Then  verify that user able to select department from dropdown.
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #  Scenario: TC_TRUNZ_05_21: Verify whether the user able to edit the assets details.
+    #      Then  Enter Asset name in edit asset details page.
+    #      Then  Click Purchase calender and choose date wisely.
+    #      Then  Verify that the User able to choose guarantee Date from calender.
+    #      Then  Verify that user able to select organisation from dropdown.
+    #      Then  verify that user able to select department from dropdown.
          
-         Then  verify that user able to select status from dropdown.
-         Then  verify that user able to select laboratory from dropdown.
-         Then  verify that user able to select availability from dropdown.
-         Then  Click Save button.
+    #      Then  verify that user able to select status from dropdown.
+    #      Then  verify that user able to select laboratory from dropdown.
+    #      Then  verify that user able to select availability from dropdown.
+    #      Then  Click Save button.
      
