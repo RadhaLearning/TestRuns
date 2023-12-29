@@ -50,4 +50,6 @@ Thumbs.db
 
 # Cucumber Report
 reports
-cypress/screenshots/*
+
+# Cucumber ScreenShots
+screenshots
