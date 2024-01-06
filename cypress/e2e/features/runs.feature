@@ -4,11 +4,15 @@ Feature: Runs page
 
     Background: 
         Given A web browser is at the Testrunz login page
-        Then Enter the registered email id.
-        Then Enter the registered password. 
-        Then Click the Remember me checkbox. 
-        Then Click Log In button.
+        Then Enter login details and click on login button.
         Then Click Runs in side menu.
+
+            Scenario: TC_TRUNZ_5_01: Verify the functionality of creating New Runs and editing the created Runs details.   
+       Then  Create an New Runs.
+        Then  Edit created Runs details.
+        Then  Assigning the Runs.
+        Then  Change the Runs status.
+        Then  Sharing the Runs.
 
 #    Scenario: TC_TRUNZ_08_01: To validate the functionality of Runs Page is show as per Figma UI after login
 #         Then Ensure that the Runs Page is shown as per Figma UI.

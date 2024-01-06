@@ -21,14 +21,17 @@
          Then  Click Labaratory Dropdown and Select wisely.
          Then  Click Create button.
 
-         
+      Scenario: TC_TRUNZ_04_13: Verify that the user able to edit the Assets details.
+        Then  Click the assets that needs to be edited.
+        Then  Edit the the assets details.
+        Then  Click save button.
+
      
       
      Scenario: TC_TRUNZ_04_02: Verify that the user able to access the close action Menu's.
          Then  Click Assets Name checkbox.
          Then  Click Select All checkbox.
          Then  Click Deselect All checkbox.
-         Then  Click Assets Name checkbox.
         #  Then  Click share button.
         #  Then  Select people and Click save button.
          Then  Click Delete button.
@@ -101,16 +104,6 @@
         Then  Verify that the mandatory error message are displayed.
 
     
-    #  Scenario: TC_TRUNZ_04_13: Verify that the user able to edit the Assets details.
-    #     Then  Click the assets that needs to be edited.
-    #     Then  Click Calender icon in Purchase date field and choose date wisely.
-    #     Then  Click Calender icon in Guaranty Warranty Expiry date field and choose date wisely. 
-    #     Then  Click Organisation Dropdown and Select wisely.
-    #     Then  Click Labaratory Dropdown and Select wisely.
-    #     Then  Click Department Dropdown and Select wisely.
-    #     Then  Click Status Dropdown and Select wisely.          
-    #     Then  Click Availability Dropdown and Select wisely.
-    #     Then  Click save button.
 
         
          

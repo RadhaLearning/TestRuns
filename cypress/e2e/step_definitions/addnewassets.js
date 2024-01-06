@@ -98,7 +98,7 @@ import {
     assetsPage.popupguarantydate().click();
     cy.wait(1000);
 
-    cy.get('[aria-rowindex="6"] > .MuiButtonBase-root').click();
+    cy.get('[data-timestamp="1705775400000"]').click();
 
     // const today = new Date();
     // const dynamicDate = new Date(today.getDate() + 7, today.getMonth(),today.getFullYear());
@@ -151,6 +151,7 @@ import {
   })
   Then("Click Create button.", () => {
    assetsPage.popupcreate().click();
+   cy.wait(3000);
   })
 
   Then("Click Assets Name checkbox.", () => {
@@ -174,7 +175,20 @@ import {
     assetsPage.sharesave().click();
   })
   Then("Click Delete button.", () => {
-   
+    assetsPage.filter().click();
+    cy.wait(1000);
+    assetsPage.searchby().click();
+    cy.wait(1000);
+    assetsPage.assetsid().click();
+    cy.wait(1000);
+    assetsPage.select().click();
+    cy.wait(1000);
+    assetsPage.selectoptions().click();
+    cy.wait(3000);
+    assetsPage.showresults().click();
+    cy.wait(3000);
+    assetsPage.tablecheckbox().click();
+    cy.wait(2000);
     assetsPage.delete().click();
   })
   Then("Click Delete Yes button.", () => {
@@ -411,16 +425,39 @@ import {
    })
 
    Then("Click the assets that needs to be edited.", () => {
-   assetsPage.displayedassets();
-   cy.wait(1000);
+    assetsPage.filter().click();
+    cy.wait(1000);
+    assetsPage.searchby().click();
+    cy.wait(1000);
+    assetsPage.assetsid().click();
+    cy.wait(1000);
+    assetsPage.select().click();
+    cy.wait(1000);
+    assetsPage.selectoptions().click();
+    cy.wait(3000);
+    assetsPage.showresults().click();
+    cy.wait(3000);
+    cy.xpath('//div[text()="ASS17"]').should('exist').click();
+    cy.wait(2000);
   })
 
   Then("Click save button.", () => {
     cy.wait(1000);
    assetsPage.assetseditsave().click();
   })
+
+  Then("Edit the the assets details.", () => {
+   
+    cy.get('#name').clear();
+    cy.wait(2000);
+    cy.xpath('//input[@placeholder="Name"]').type('ASS17_Edited');
+    cy.wait(2000);
+    cy.xpath('//button[text()="Save"]').click();
+
+  })
   
 
+  
 
 
 

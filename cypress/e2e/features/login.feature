@@ -2,8 +2,8 @@ Feature: Login page
 
     Feature Login page will work depending on the user credentials.
 
-    # Scenario: TC_TRUNZ_01_01: Verify whether the application url is working
-    #     Given A web browser is at the Testrunz login page
+    Scenario: TC_TRUNZ_01_01: Verify whether the application url is working
+        Given A web browser is at the Testrunz login page
     
     # Scenario: TC_TRUNZ_01_02: Verify the presence of the login page locator
     #     Given A web browser is at the Testrunz login page

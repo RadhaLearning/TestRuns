@@ -7,7 +7,7 @@ import { loginPage } from '@pages/LoginPage';
 
 
 Given("A web browser is at the Testrunz login page", () => {
-  cy.viewport(1920, 1080)
+
   cy.visit("/");
   cy.wait(1000);
 });

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
@@ -19,7 +20,9 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  retries: {   //numero de tentativas
+  viewportWidth: 1920,
+  viewportHeight: 1080,
+  retries: {  
     runMode: 0, 
     openMode: 0,
   },
@@ -27,7 +30,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: 'cypress/e2e/**/*.feature',
-    baseUrl:"https://dev.testrunz.com/",
+    baseUrl: process.env.CYPRESS_BASE_URL,
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,

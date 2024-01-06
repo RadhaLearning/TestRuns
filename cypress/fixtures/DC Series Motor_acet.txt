@@ -1,0 +1,198 @@
+LOAD TEST ON DC SHUNT MOTOR
+
+AIM:
+To conduct load test on DC shunt motor and to obtain performance curve.
+
+APPARATUS REQUIRED:
+S.NO.
+
+Apparatus
+
+Range
+
+Type
+
+Quantity
+
+1.
+
+Ammeter
+
+(0-20)A
+
+MC
+
+2.
+
+Voltmeter
+
+(0-300)V
+
+MC
+
+1
+
+3.
+
+Rheostat
+
+1050Ω /
+1A
+
+Wire
+wound
+
+1
+
+4.
+
+Tachometer
+
+(01500)rpm
+
+Digital
+
+1
+
+5.
+
+Connecting
+Wires
+
+-
+
+-
+
+As
+required
+
+1
+
+FORMULA:
+
+Torque, (τ) = 9.81 x R x (S1 ∼ S2) N-m
+Input Power = VLIL Watts
+Output Power = 2π Nτ / 60
+
+watts
+
+Percentage Efficiency, (η) = Output Power / Input Power x 100 %
+where
+S1, S2 - Spring balance reading in Kilogram
+VL - Line voltage (volts)
+IL - Line current (A)
+N - Speed (rpm)
+R - Radius of the brake drum (m)
+CIRCUIT DIAGRAM:
+
+NAMEPLATE DETAILS OF DC MOTOR:
+Fuse rating: % of full load current
+Voltage: V
+Ampere: A
+Speed: rpm
+
+THEORY:
+The Shunt motor has definite no load speed hence it does not run away when the load is
+suddenly thrown off provided the field current remains closed. The drop in rate from no load to
+full load is small hence this motor is usually referred to as a constant-speed motor.
+The efficiency curve is usually of the same shape for all-electric motors and generators as the
+shape of the efficiency curve and the point of maximum efficiency can be varied considerably by
+the designer, though it is advantageous to have an efficiency curve that is relatively flat so that
+there is little change in efficiency between load and 25% overload and to have the maximum
+efficiency as near to the full load as possible.
+From the Curve, it is observed that a certain Value of current is required when output is zero.
+The motor input under no- Load conditions goes to meet the various losses, occurring within the
+machines.
+
+PROCEDURE:
+1. The connections are made as per the circuit diagram.
+2. The DPST switch is closed and the 3-point starter handle is moved smoothly from the
+OFF to the ON position.
+3. The motor is started and the machine is brought to rated speed by adjusting the field
+rheostat.
+4. After that, the rheostat is kept in a fixed position, and no-load voltage, no load current,
+and no load speed are noted.
+5. By using the brake drum with the spring balance arrangement the motor is loaded and
+the corresponding readings are noted up to the rated current.
+6. After the observation of all the readings, the load is released gradually and the field
+rheostat is brought to the minimum position.
+7. Using the DPST switch, a motor is switched OFF at no load condition.
+
+CALCULATION OF FUSE RATING:
+Fuse current rating = Rated current x 1.25 = Å
+
+TABULAR COLUMN:
+S Input
+Input
+. Voltage Current
+N
+(VL)
+(IL)
+O
+.
+
+Motor
+Speed
+
+Spring Balance
+Reading
+
+2
+.
+
+3
+.
+
+4
+.
+
+5
+.
+
+6
+.
+
+Input
+power
+
+Output
+power
+
+Efficien
+cy (η)
+
+(VL IL)
+
+(2πNτ/
+60)
+
+(%)
+
+(T)
+(N)
+
+S1 (Kg)
+
+1
+.
+
+Torque
+
+S2 (Kg)
+
+MODEL GRAPH:
+
+PRECAUTIONS:
+1.
+2.
+3.
+4.
+5.
+
+The DPST switch must be kept in an open position.
+Make sure that the starter handle is in the OFF position.
+Rheostat must be kept in a minimum resistive position.
+There should not be any load on the motor while starting.
+While running on load, the Brake drum is cooled by pouring water inside the brake drum.
+
+
